@@ -16,8 +16,8 @@
   },
   "dependencies": {
     "cypress-file-upload": "3.5.3",
-    "minimist": "1.2.3",
-    "eslint-config-trybe-fundamentals": "1.1.0"
+    "eslint-config-trybe-fundamentals": "1.1.0",
+    "minimist": "1.2.3"
   },
   "scripts": {
     "test": "cypress run",
