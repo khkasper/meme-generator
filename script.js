@@ -12,69 +12,42 @@ const meme4 = document.querySelector('#meme-4');
 
 // Adiciona texto do "text-input" dentro do "meme-text"
 
-function memeTxt() {
-  textInput.addEventListener('input', () => {
-    const memeTextInput = document.querySelector('#meme-text');
-    memeTextInput.innerText = textInput.value;
-  });
-}
-memeTxt();
+textInput.addEventListener('input', () => {
+  const memeTextInput = document.querySelector('#meme-text');
+  memeTextInput.innerText = textInput.value;
+});
 
 // https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications#example.3a_using_object_urls_to_display_images
 // Adiciona uma imagem selecionada dentro do "meme-image".
 
-function memeImgAdd() {
-  imgInput.addEventListener('change', () => {
-    memeImg.src = URL.createObjectURL(imgInput.files[0]);
-  });
-}
-memeImgAdd();
+imgInput.addEventListener('change', () => {
+  memeImg.src = URL.createObjectURL(imgInput.files[0]);
+});
 
-function fire() {
-  fireBttn.addEventListener('click', () => {
-    memeImgContainer.style.border = '3px dashed red';
-  });
-}
-fire();
+fireBttn.addEventListener('click', () => {
+  memeImgContainer.style.border = '3px dashed red';
+});
 
-function water() {
-  waterBttn.addEventListener('click', () => {
-    memeImgContainer.style.border = '5px double blue';
-  });
-}
-water();
+waterBttn.addEventListener('click', () => {
+  memeImgContainer.style.border = '5px double blue';
+});
 
-function earth() {
-  earthBttn.addEventListener('click', () => {
-    memeImgContainer.style.border = '6px groove green';
-  });
-}
-earth();
+earthBttn.addEventListener('click', () => {
+  memeImgContainer.style.border = '6px groove green';
+});
 
-function meme1Add() {
-  meme1.addEventListener('click', () => {
-    memeImg.src = 'imgs/meme1.png';
-  });
-}
-meme1Add();
+meme1.addEventListener('click', () => {
+  memeImg.src = 'imgs/meme1.png';
+});
 
-function meme2Add() {
-  meme2.addEventListener('click', () => {
-    memeImg.src = 'imgs/meme2.png';
-  });
-}
-meme2Add();
+meme2.addEventListener('click', () => {
+  memeImg.src = 'imgs/meme2.png';
+});
 
-function meme3Add() {
-  meme3.addEventListener('click', () => {
-    memeImg.src = 'imgs/meme3.png';
-  });
-}
-meme3Add();
+meme3.addEventListener('click', () => {
+  memeImg.src = 'imgs/meme3.png';
+});
 
-function meme4Add() {
-  meme4.addEventListener('click', () => {
-    memeImg.src = 'imgs/meme4.png';
-  });
-}
-meme4Add();
+meme4.addEventListener('click', () => {
+  memeImg.src = 'imgs/meme4.png';
+});
