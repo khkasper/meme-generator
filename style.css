@@ -1,5 +1,5 @@
 html {
-  background: linear-gradient(to bottom right, rgb(0, 170, 0), rgb(0, 255, 0)) fixed;
+  background: linear-gradient(to bottom right, rgb(0, 100, 0), rgb(0, 255, 0)) fixed;
 }
 
 legend {
@@ -25,7 +25,7 @@ legend {
   height: 400px;
   position: absolute;
   z-index: 0;
-  }
+}
 
 #meme-text {
   text-shadow: black 5px 5px 5px;
@@ -35,4 +35,35 @@ legend {
   z-index: 1;
   /* https://css-tricks.com/almanac/properties/o/overflow-wrap/ */
   word-break: break-word;
+}
+
+#buttons-container {
+  margin-left: 100px;
+}
+
+#fire {
+  background-color: red;
+}
+
+#water {
+  background-color: blue;
+}
+
+#earth {
+  background-color: green;
+}
+
+#sug-meme {
+  display: inline-block;
+}
+
+#meme-1,
+#meme-2,
+#meme-3,
+#meme-4 {
+  height: 70px;
+}
+
+button {
+  margin: 30px 10px;
 }
