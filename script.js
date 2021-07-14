@@ -1,14 +1,14 @@
 const memeImgContainer = document.querySelector('#meme-image-container');
+const memeTextInput = document.querySelector('#meme-text');
 const textInput = document.querySelector('#text-input');
 const imgInput = document.querySelector('#meme-insert');
 const memeImg = document.querySelector('#meme-image');
+const sgMemes = document.querySelector('#sug-memes');
 const fireBttn = document.querySelector('#fire');
 const waterBttn = document.querySelector('#water');
 const earthBttn = document.querySelector('#earth');
-const sgMemes = document.querySelector('#sug-memes');
 
 textInput.addEventListener('input', () => {
-  const memeTextInput = document.querySelector('#meme-text');
   memeTextInput.innerText = textInput.value;
 });
 
